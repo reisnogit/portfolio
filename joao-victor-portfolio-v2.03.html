@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>João Victor — Frontend & Dados</title>
+<meta name="description" content="Portfólio de João Victor, Frontend/Full Stack Developer em formação com foco em Análise de Dados.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  (function(){
+    var saved = localStorage.getItem('theme');
+    var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    if (theme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+  })();
+</script>
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header id="site-header">
+  <nav class="wrap">
+    <a href="#topo" class="logo"><span class="card-mark"></span>João Victor</a>
+    <ul class="nav-links">
+      <li><a href="#foco">Foco</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#formacao">Formação</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <div class="nav-cta"><a href="./Curriculo_Joao_Victor_Reis.pdf" target="_blank" rel="noopener" download class="btn btn-primary btn-sm">Baixe meu CV</a></div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo escuro">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.2M12 19.8V22M4.2 4.2l1.55 1.55M18.25 18.25l1.55 1.55M2 12h2.2M19.8 12H22M4.2 19.8l1.55-1.55M18.25 5.75l1.55-1.55"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+    </button>
+    <button class="burger" id="burger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main id="topo">
+
+
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <div class="tab-label">ficha profissional</div>
+      <h1>Organizo <em>dados</em> e construo interfaces claras.</h1>
+      <p>Frontend & Full Stack Developer em formação, unindo desenvolvimento web a análise de dados com Python — para transformar informação bagunçada em algo que faz sentido.</p>
+      <div class="hero-actions">
+        <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+        <a href="#contato" class="btn btn-ghost">Entrar em contato</a>
+      </div>
+      <div class="hero-meta">
+        <div><strong>Frontend</strong>Developer</div>
+        <div><strong>Full Stack</strong>Developer</div>
+        <div><strong>Futuro</strong>Analista de Dados</div>
+      </div>
+    </div>
+
+    <div class="card-stage reveal">
+      <div class="index-card back"></div>
+      <div class="index-card mid"></div>
+      <div class="index-card front">
+        <div class="punch"></div>
+        <div class="tab">PERFIL — 01</div>
+        <div class="field">
+          <div class="k">Nome</div>
+          <div class="v">João Victor</div>
+        </div>
+        <hr>
+        <div class="field">
+          <div class="k">Função</div>
+          <div class="v small">Frontend · Full Stack · Dados</div>
+        </div>
+        <div class="field">
+          <div class="k">Stack</div>
+          <div class="v small">Python · JS · Tailwind · Git</div>
+        </div>
+        <div class="field">
+          <div class="k">Status</div>
+          <div class="v small">Disponível para oportunidades</div>
+        </div>
+        <div class="stamp">EM<br>FORMAÇÃO<br>2026</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="divider"></div></div>
+
+
+  <section class="section" id="foco">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="tab-label">como posso ajudar</div>
+        <h2>Três frentes, um mesmo cuidado com o detalhe.</h2>
+      </div>
+
+      <div class="focus-layout">
+        <div class="focus-list reveal">
+          <div class="focus-item">
+            <div class="focus-num">01</div>
+            <div><h3>Desenvolvimento Front-End</h3><p>Interfaces responsivas com HTML, CSS, JavaScript, Tailwind e Bootstrap — do layout ao código funcional.</p></div>
+          </div>
+          <div class="focus-item">
+            <div class="focus-num">02</div>
+            <div><h3>Análise de Dados</h3><p>Leitura, limpeza e tratamento de bases com Python — organizando informação para gerar indicadores confiáveis.</p></div>
+          </div>
+          <div class="focus-item">
+            <div class="focus-num">03</div>
+            <div><h3>UX/UI & Usabilidade</h3><p>Atenção à experiência do usuário, com interfaces claras, responsivas e pensadas para quem vai usar.</p></div>
+          </div>
+        </div>
+
+        <div class="drawer-visual reveal">
+          <div class="drawer-head"><span>ficha.csv</span><span>nível</span></div>
+          <div class="drawer-row on"><span class="tag-dot"></span><span class="lbl">Python</span><span class="pct">análise de dados</span></div>
+          <div class="drawer-row"><span class="tag-dot"></span><span class="lbl">HTML5 / CSS3</span><span class="pct">estrutura & estilo</span></div>
+          <div class="drawer-row"><span class="tag-dot"></span><span class="lbl">JavaScript</span><span class="pct">interatividade</span></div>
+          <div class="drawer-row on"><span class="tag-dot"></span><span class="lbl">Tailwind / Bootstrap</span><span class="pct">interfaces</span></div>
+          <div class="drawer-row"><span class="tag-dot"></span><span class="lbl">Git & GitHub</span><span class="pct">versionamento</span></div>
+          <div class="drawer-row on"><span class="tag-dot"></span><span class="lbl">CSV</span><span class="pct">tratamento de dados</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" style="padding-top:0;">
+    <div class="wrap">
+      <div class="highlights">
+        <div class="highlight-card reveal">
+          <div class="hi-num">— experiência prévia</div>
+          <h3>Atendimento ao público</h3>
+          <p>Trago para o código a mesma escuta e foco em resultado que desenvolvi lidando direto com pessoas.</p>
+        </div>
+        <div class="highlight-card reveal">
+          <div class="hi-num">— jeito de trabalhar</div>
+          <h3>Pensamento analítico</h3>
+          <p>Gosto de entender o problema antes de sair escrevendo código — organização vem antes de solução.</p>
+        </div>
+        <div class="highlight-card reveal">
+          <div class="hi-num">— em constante evolução</div>
+          <h3>Aprendizado rápido</h3>
+          <p>Formação contínua em dados e desenvolvimento, sempre testando o que aprendo em projetos reais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="projetos">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="tab-label">arquivo de projetos</div>
+        <h2>Projetos selecionados.</h2>
+        <p>Uma amostra do que venho praticando entre front-end e dados.</p>
+      </div>
+
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="webapp">Web Apps</button>
+        <button class="filter-btn" data-filter="frontend">Front-end</button>
+        <button class="filter-btn" data-filter="dados">Dados</button>
+      </div>
+
+      <div class="folio-grid" id="folioGrid">
+        <div class="folio-card reveal" data-cat="webapp" data-demo="https://barbearia-navalh4.netlify.app/">
+          <div class="folio-visual">
+            <div class="fv-bg" style="background:linear-gradient(135deg, #0F5257, #1c2126 70%);"></div>
+            <div class="fv-bar"><span></span><span></span><span></span></div>
+            <div class="fv-top"><span class="fi-idx">01</span><span class="fi-cat">Web App</span></div>
+            <div class="fv-shine"></div>
+            <a class="fv-cta" href="https://barbearia-navalh4.netlify.app/" target="_blank" rel="noopener">
+              Ver projeto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+          <div class="folio-body">
+            <h3>Sistema de Agendamento e Barbearia</h3>
+            <p>Aplicação web responsiva para agendamento de serviços, com área do cliente e painel administrativo para horários, profissionais e clientes.</p>
+            <div class="folio-status"><span class="sdot"></span>código em organização</div>
+              <div class="folio-actions">
+                <button class="btn btn-outline demo-btn">Ver demo</button>
+              </div>
+          </div>
+        </div>
+
+        <div class="folio-card reveal" data-cat="webapp" data-demo="https://meow-eight-gamma.vercel.app/">
+          <div class="folio-visual">
+            <div class="fv-bg" style="background:linear-gradient(135deg, #E8492E, #1c2126 70%);"></div>
+            <div class="fv-bar"><span></span><span></span><span></span></div>
+            <div class="fv-top"><span class="fi-idx">02</span><span class="fi-cat">Web App</span></div>
+            <div class="fv-shine"></div>
+            <a class="fv-cta" href="https://meow-eight-gamma.vercel.app/" target="_blank" rel="noopener">
+              Ver projeto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+          <div class="folio-body">
+            <h3>Plataforma de Resgate e Adoção de Animais</h3>
+            <p>Site para uma ONG de proteção animal, com foco em divulgação de animais para adoção, mobilização de voluntários e apresentação dos projetos.</p>
+            <div class="folio-status"><span class="sdot"></span>código em organização</div>
+              <div class="folio-actions">
+                <button class="btn btn-outline demo-btn">Ver demo</button>
+              </div>
+          </div>
+        </div>
+
+        <div class="folio-card reveal" data-cat="dados">
+          <div class="folio-visual">
+            <div class="fv-bg" style="background:linear-gradient(135deg, #0F5257, #E8492E 130%);"></div>
+            <div class="fv-bar"><span></span><span></span><span></span></div>
+            <div class="fv-top"><span class="fi-idx">03</span><span class="fi-cat">Dados</span></div>
+            <div class="fv-shine"></div>
+            <span class="fv-cta" style="cursor:default;">Em breve</span>
+          </div>
+          <div class="folio-body">
+            <h3>Análise e Tratamento de Dados com Python</h3>
+            <p>Leitura, limpeza, tratamento e organização de bases CSV com Python, incluindo validação de informações e criação de indicadores.</p>
+            <div class="folio-status"><span class="sdot"></span>código em organização</div>
+              <div class="folio-actions">
+                <button class="btn btn-outline demo-btn">Ver demo</button>
+              </div>
+          </div>
+        </div>
+
+        <div class="folio-card reveal" data-cat="frontend" data-demo="https://belezanegra.netlify.app/">
+          <div class="folio-visual">
+            <div class="fv-bg" style="background:linear-gradient(135deg, #E8492E, #0F5257 130%);"></div>
+            <div class="fv-bar"><span></span><span></span><span></span></div>
+            <div class="fv-top"><span class="fi-idx">04</span><span class="fi-cat">Front-end</span></div>
+            <div class="fv-shine"></div>
+            <a class="fv-cta" href="https://belezanegra.netlify.app/" target="_blank" rel="noopener">
+              Ver projeto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+          <div class="folio-body">
+            <h3>Beleza Negra — Salão de Beleza</h3>
+            <p>Site para salão de beleza especializado em cuidados e estilo para peles e cabelos negros, com apresentação de serviços, apresentação de funcionarios e sistema de agendamento.</p>
+            <div class="folio-status"><span class="sdot"></span>código em organização</div>
+              <div class="folio-actions">
+                <button class="btn btn-outline demo-btn">Ver demo</button>
+              </div>
+          </div>
+        </div>
+
+        <div class="folio-card reveal" data-cat="frontend" data-demo="https://pesquisaroupas.netlify.app" style="grid-column:span 2;">
+          <div class="folio-visual">
+            <div class="fv-bg" style="background:linear-gradient(135deg, #0F5257, #E8492E 90%, #1c2126);"></div>
+            <div class="fv-bar"><span></span><span></span><span></span></div>
+            <div class="fv-top"><span class="fi-idx">05</span><span class="fi-cat">Front-end</span></div>
+            <div class="fv-shine"></div>
+            <a class="fv-cta" href="https://pesquisaroupas.netlify.app" target="_blank" rel="noopener">
+              Ver projeto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+          <div class="folio-body">
+            <h3>Plataforma de Curadoria de Moda</h3>
+            <p>Interface web para descoberta de lojas de roupas baseada no seu estilo, com design responsivo, navegação dinâmica e foco em experiência do usuário.</p>
+            <div class="folio-status"><span class="sdot"></span>código em organização</div>
+              <div class="folio-actions">
+                <button class="btn btn-outline demo-btn">Ver demo</button>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="folio-more reveal">
+        <a href="https://github.com/reisnogit" target="_blank" rel="noopener" class="btn btn-ghost">Ver mais no GitHub</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="formacao">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="tab-label">arquivo de formação</div>
+        <h2>Fichas de aprendizado.</h2>
+      </div>
+      <div class="formacao-status reveal"><span class="sdot"></span>Tecnologia da Informação / Análise de Dados — formação em andamento</div>
+      <div class="ficha-grid">
+        <div class="ficha reveal"><div class="ficha-id">FICHA 01</div><h3>Análise de Dados</h3><p>Fundamentos de análise, tratamento e organização de dados.</p></div>
+        <div class="ficha reveal"><div class="ficha-id">FICHA 02</div><h3>Python para Análise de Dados</h3><p>Manipulação e processamento de bases de dados.</p></div>
+        <div class="ficha reveal"><div class="ficha-id">FICHA 03</div><h3>Desenvolvimento Web</h3><p>HTML, CSS, JavaScript e aplicações responsivas.</p></div>
+        <div class="ficha reveal"><div class="ficha-id">FICHA 04</div><h3>UX/UI Design</h3><p>Princípios de interface, usabilidade e experiência do usuário.</p></div>
+        <div class="ficha reveal"><div class="ficha-id">FICHA 05</div><h3>Segurança da Informação</h3><p>Fundamentos de segurança e proteção de dados.</p></div>
+        <div class="ficha reveal"><div class="ficha-id">FICHA 06</div><h3>Excel & Produtividade</h3><p>Organização, tratamento e análise de informações.</p></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="cta-banner">
+    <div class="wrap"><h2>Vamos conversar sobre o seu projeto?</h2></div>
+  </section>
+
+
+  <section class="section" id="contato">
+    <div class="wrap contact-layout">
+      <div class="reveal">
+        <div class="tab-label">contato</div>
+        <h2 style="font-size:clamp(24px,3vw,32px);margin-bottom:28px;">Escolha o canal que preferir.</h2>
+
+        <div class="contact-info-box">
+          <div class="tab-label" style="margin-bottom:6px;">e-mail</div>
+          <a class="cval" href="mailto:jvr.souza07@gmail.com">jvr.souza07@gmail.com</a>
+        </div>
+        <div class="contact-info-box">
+          <div class="tab-label" style="margin-bottom:6px;">whatsapp</div>
+          <a class="cval" href="https://wa.me/5571999903848" target="_blank" rel="noopener">(71) 99990-3848</a>
+        </div>
+        <div class="contact-info-box">
+          <div class="tab-label" style="margin-bottom:6px;">linkedin</div>
+          <a class="cval" href="https://www.linkedin.com/in/jo%C3%A3o-victor-a4a2231ba/" target="_blank" rel="noopener">/in/joão-victor</a>
+        </div>
+        <div class="contact-info-box">
+          <div class="tab-label" style="margin-bottom:6px;">github</div>
+          <a class="cval" href="https://github.com/reisnogit" target="_blank" rel="noopener">/reisnogit</a>
+        </div>
+
+        <div class="social-row">
+          <a href="https://github.com/reisnogit" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a10 10 0 00-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.1-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.1.39-1.99 1.03-2.7-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03a9.4 9.4 0 015 0c1.9-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.71 1.03 1.6 1.03 2.7 0 3.85-2.35 4.7-4.58 4.94.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0012 2z"/></svg></a>
+          <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-a4a2231ba/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 11v5M8 8v.01M12 16v-5M12 11c0-1.1.9-2 2.5-2S17 9.9 17 11v5"/></svg></a>
+          <a href="https://wa.me/5571999903848" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3a9 9 0 00-7.8 13.5L3 21l4.6-1.2A9 9 0 1012 3z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="form-card reveal">
+        <form id="contactForm">
+          <div class="form-row">
+            <label for="name">Seu nome</label>
+            <input type="text" id="name" name="name" placeholder="Como posso te chamar?" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Seu e-mail</label>
+            <input type="email" id="email" name="email" placeholder="voce@email.com" required>
+          </div>
+          <div class="form-row">
+            <label for="subject">Assunto</label>
+            <input type="text" id="subject" name="subject" placeholder="Sobre o que quer falar?" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" placeholder="Conte um pouco mais..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Enviar mensagem</button>
+          <p class="form-note">Abre seu app de e-mail padrão com a mensagem pronta para enviar.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <p>© 2026 João Victor. Todos os direitos reservados.</p>
+    <div class="footer-links">
+      <a href="#foco">Foco</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#formacao">Formação</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
