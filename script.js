@@ -29,6 +29,7 @@
       });
     }, { threshold: 0.12 });
     revealEls.forEach(el => io.observe(el));
+    window.setTimeout(() => revealEls.forEach(el => el.classList.add('in')), 900);
   }
 
 
