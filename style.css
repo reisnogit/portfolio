@@ -349,10 +349,13 @@
     .focus-layout{grid-template-columns:1fr;}
     .highlights{grid-template-columns:1fr;}
     .folio-grid{grid-template-columns:1fr;}
+    .folio-card{grid-column:auto !important;}
     .ficha-grid{grid-template-columns:1fr 1fr;}
     .contact-layout{grid-template-columns:1fr;}
   }
   @media (max-width:760px){
+    nav{padding:14px 20px;}
+    .logo{font-size:18px;}
     .nav-links,.nav-cta{display:none;}
     .burger{display:flex;}
     nav{flex-wrap:wrap;}
@@ -363,6 +366,44 @@
     header.menu-open .nav-cta{display:flex;order:4;width:100%;padding:0 0 20px;}
     header.menu-open .nav-cta .btn{width:100%;justify-content:center;}
     .wrap{padding:0 20px;}
+    .section{padding:68px 0;}
+    .section-head{margin-bottom:34px;}
+    .section-head h2{line-height:1.15;}
+    .hero{padding:48px 0 56px;gap:20px;}
+    .hero-copy h1{font-size:clamp(36px,11vw,48px);}
+    .hero-copy p{font-size:16px;margin-bottom:26px;}
+    .hero-actions{flex-direction:column;align-items:stretch;margin-bottom:28px;}
+    .hero-actions .btn{justify-content:center;}
+    .hero-meta{gap:14px 22px;}
+    .hero-meta div{font-size:11px;}
+    .hero-meta strong{font-size:14px;}
+    .card-stage{height:300px;margin-top:4px;}
     .ficha-grid{grid-template-columns:1fr;}
-    .index-card{width:280px;padding:24px 20px 22px;}
+    .index-card{width:min(280px,calc(100vw - 48px));padding:24px 20px 22px;}
+    .index-card .field .v{font-size:17px;}
+    .index-card .field .v.small{font-size:13px;}
+    .index-card.back{transform:rotate(6deg) translate(10px,8px);}
+    .index-card.mid{transform:rotate(-4deg) translate(-8px,4px);}
+    .focus-item{gap:14px;padding:18px 0;}
+    .focus-item h3{font-size:17px;}
+    .focus-item p{font-size:14px;}
+    .drawer-visual .drawer-row{padding:14px 12px;font-size:11px;gap:8px;}
+    .drawer-visual .drawer-row span.lbl{margin-left:2px;min-width:0;}
+    .drawer-visual .drawer-row span.pct{max-width:42%;text-align:right;}
+    .highlights{gap:14px;}
+    .highlight-card{padding:22px 18px;}
+    .filter-bar{margin-bottom:26px;gap:8px;}
+    .filter-btn{padding:8px 12px;font-size:11.5px;}
+    .folio-visual{height:170px;}
+    .folio-body{padding:20px 18px 22px;}
+    .folio-body h3{font-size:17px;}
+    .folio-body p{font-size:14px;}
+    .folio-actions .btn{width:100%;justify-content:center;}
+    .formacao-status{align-items:flex-start;font-size:12px;margin-bottom:26px;}
+    .cta-banner{padding:52px 0;}
+    .cta-banner h2{line-height:1.15;}
+    .contact-layout{gap:38px;}
+    .form-card{padding:24px 18px;}
+    .footer-row{align-items:flex-start;flex-direction:column;}
+    .footer-links{flex-wrap:wrap;gap:12px 18px;}
   }
