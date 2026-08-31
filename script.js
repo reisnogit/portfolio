@@ -65,15 +65,52 @@
 
 
   const form = document.getElementById('contactForm');
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
-    const body = `Nome: ${name}\nE-mail: ${email}\n\n${message}`;
-    window.location.href = `mailto:jvr.souza07@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  });
+  if (form) {
+    const submitButton = form.querySelector('.form-submit');
+    const submitLabel = form.querySelector('.submit-label');
+    const status = document.getElementById('formStatus');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      submitButton.disabled = true;
+      submitButton.classList.add('is-loading');
+      submitLabel.textContent = 'Enviando...';
+      status.className = 'form-status';
+      status.textContent = '';
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          status.className = 'form-status success';
+          status.textContent = 'Mensagem enviada com sucesso! Obrigado pelo contato.';
+          form.reset();
+        } else {
+          const data = await response.json().catch(() => ({}));
+          const message = data?.errors?.map(error => error.message).join(', ');
+          throw new Error(message || 'Não foi possível enviar a mensagem.');
+        }
+      } catch (error) {
+        status.className = 'form-status error';
+        status.textContent = 'Não foi possível enviar agora. Tente novamente em alguns instantes.';
+        console.error('Erro ao enviar formulário:', error);
+      } finally {
+        submitButton.disabled = false;
+        submitButton.classList.remove('is-loading');
+        submitLabel.textContent = 'Enviar mensagem';
+      }
+    });
+  }
 
 
   // Lógica para abrir demonstração em nova janela

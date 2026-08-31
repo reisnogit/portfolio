@@ -330,14 +330,16 @@
       </div>
 
       <div class="form-card reveal">
-        <form id="contactForm">
+        <form id="contactForm" action="https://formspree.io/f/meaqeepa" method="POST">
+          <input type="hidden" name="_subject" value="Nova mensagem recebida pelo portfólio">
+          <input type="text" name="_gotcha" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
           <div class="form-row">
             <label for="name">Seu nome</label>
-            <input type="text" id="name" name="name" placeholder="Como posso te chamar?" required>
+            <input type="text" id="name" name="name" placeholder="Como posso te chamar?" autocomplete="name" required>
           </div>
           <div class="form-row">
             <label for="email">Seu e-mail</label>
-            <input type="email" id="email" name="email" placeholder="voce@email.com" required>
+            <input type="email" id="email" name="email" placeholder="voce@email.com" autocomplete="email" required>
           </div>
           <div class="form-row">
             <label for="subject">Assunto</label>
@@ -347,8 +349,12 @@
             <label for="message">Mensagem</label>
             <textarea id="message" name="message" placeholder="Conte um pouco mais..." required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Enviar mensagem</button>
-          <p class="form-note">Abre seu app de e-mail padrão com a mensagem pronta para enviar.</p>
+          <button type="submit" class="btn btn-primary form-submit" style="width:100%;justify-content:center;">
+            <span class="submit-label">Enviar mensagem</span>
+            <span class="submit-spinner" aria-hidden="true"></span>
+          </button>
+          <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+          <p class="form-note">Sua mensagem será enviada diretamente para meu e-mail. Responderei assim que possível.</p>
         </form>
       </div>
     </div>

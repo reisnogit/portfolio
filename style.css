@@ -360,6 +360,16 @@
   .form-row input:focus, .form-row textarea:focus{outline:none;border-color:var(--signal);}
   .form-row textarea{resize:vertical;min-height:110px;}
   .form-note{font-size:12.5px;color:var(--ink-dim);margin-top:14px;}
+  .form-honeypot{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important;}
+  .form-submit{position:relative;min-height:47px;overflow:hidden;}
+  .form-submit:disabled{cursor:not-allowed;opacity:.82;transform:none;box-shadow:none;}
+  .submit-spinner{display:none;width:16px;height:16px;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:form-spin .75s linear infinite;}
+  .form-submit.is-loading .submit-spinner{display:inline-block;}
+  .form-status{min-height:0;margin-top:0;padding:0;border:0;border-radius:4px;font-size:13px;line-height:1.5;opacity:0;transform:translateY(-4px);transition:opacity .25s ease,transform .25s ease,margin .25s ease,padding .25s ease;}
+  .form-status.success,.form-status.error{opacity:1;transform:translateY(0);margin-top:14px;padding:11px 13px;}
+  .form-status.success{color:#2f7a4a;background:rgba(67,160,94,.09);border:1px solid rgba(67,160,94,.24);}
+  .form-status.error{color:#b84a3a;background:rgba(232,73,46,.08);border:1px solid rgba(232,73,46,.22);}
+  @keyframes form-spin{to{transform:rotate(360deg);}}
 
 
   footer{padding:36px 0 44px;border-top:1px solid var(--border-soft);}
